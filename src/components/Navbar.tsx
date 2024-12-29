@@ -116,9 +116,13 @@ function Navbar() {
         >
           {[
             { href: "/", label: "HOME" },
-            { href: "http://localhost:3000//About", label: "ABOUT" },
-            { href: "http://localhost:3000/", label: "BLOG" },
-            { href: "http://localhost:3000/Contact", label: "CONTACT" },
+{ href: "/About", label: "ABOUT" },
+{ href: "/Blog", label: "BLOG" },
+{ href: "/Contact", label: "CONTACT" },
+//           { href: "/", label: "HOME" },
+// { href: "/About", label: "ABOUT" },
+// { href: "/", label: "BLOG" },  // Updated BLOG link to point to home page
+// { href: "/Contact", label: "CONTACT" },
           ].map((link, index) => (
             <Link
               key={index}
